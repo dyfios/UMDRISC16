@@ -1,0 +1,45 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/dbake/Desktop/sandbox/UMDRISC16/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/dbake/Desktop/sandbox/UMDRISC16/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/ProjectLab1/ProgramCounter.vhd" in Library work.
+Architecture behavioral of Entity programcounter is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FetchUnit.vhd" in Library work.
+Architecture behavioral of Entity fetchunit is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/Decode.vhd" in Library work.
+Architecture behavior of Entity decode is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/OaUnit.vhd" in Library work.
+Architecture behavioral of Entity oaunit is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/WB_Unit.vhd" in Library work.
+Architecture behavior of Entity wb_unit is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ControlUnit.vhd" in Library work.
+Entity <controlunit> compiled.
+Entity <controlunit> (Architecture <structural>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> 
+
+Total memory usage is 271676 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

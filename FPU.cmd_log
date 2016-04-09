@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.xst" -ofn "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.syr" 
+xst -intstyle ise -ifn "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.xst" -ofn "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.syr" 

@@ -1,0 +1,683 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: FPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FPU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FPU"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : FPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_arithmetic_unit.vhd" in Library work.
+Architecture combinational of Entity arith_unit is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_logic_unit.vhd" in Library work.
+Architecture combinational of Entity logic_unit is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_shift_unit.vhd" in Library work.
+Architecture combinational of Entity alu_shift_unit is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/load_store_unit.vhd" in Library work.
+Architecture behavioral of Entity load_store_unit is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_mux.vhd" in Library work.
+Architecture combinational of Entity alu_mux is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_toplevel.vhd" in Library work.
+Architecture structural of Entity alu is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/OA_MUX.vhd" in Library work.
+Architecture combinational of Entity oa_mux is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ALU_LATCH.vhd" in Library work.
+Architecture behavior of Entity alu_latch is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/GenPurposeRegBank.vhd" in Library work.
+Architecture behavioral of Entity genpurposeregbank is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ShadowRegBank.vhd" in Library work.
+Architecture behavioral of Entity shadowregbank is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ipcore_dir/Data_Memory.vhd" in Library work.
+Architecture data_memory_a of Entity data_memory is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ipcore_dir/ProgMemory.vhd" in Library work.
+Architecture progmemory_a of Entity progmemory is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd" in Library work.
+Architecture structural of Entity fpu is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <FPU> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <OA_MUX> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <ALU_LATCH> in library <work> (architecture <Behavior>).
+
+Analyzing hierarchy for entity <GenPurposeRegBank> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ShadowRegBank> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Arith_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <Logic_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <ALU_Shift_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <Load_Store_Unit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ALU_Mux> in library <work> (architecture <Combinational>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <FPU> in library <work> (Architecture <structural>).
+WARNING:Xst:753 - "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd" line 62: Unconnected output port 'LDST_OUT' of component 'ALU_LATCH'.
+WARNING:Xst:2211 - "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd" line 94: Instantiating black box module <Data_Memory>.
+WARNING:Xst:2211 - "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd" line 105: Instantiating black box module <ProgMemory>.
+Entity <FPU> analyzed. Unit <FPU> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <Structural>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <Arith_Unit> in library <work> (Architecture <Combinational>).
+Entity <Arith_Unit> analyzed. Unit <Arith_Unit> generated.
+
+Analyzing Entity <Logic_Unit> in library <work> (Architecture <Combinational>).
+Entity <Logic_Unit> analyzed. Unit <Logic_Unit> generated.
+
+Analyzing Entity <ALU_Shift_Unit> in library <work> (Architecture <Combinational>).
+Entity <ALU_Shift_Unit> analyzed. Unit <ALU_Shift_Unit> generated.
+
+Analyzing Entity <Load_Store_Unit> in library <work> (Architecture <Behavioral>).
+Entity <Load_Store_Unit> analyzed. Unit <Load_Store_Unit> generated.
+
+Analyzing Entity <ALU_Mux> in library <work> (Architecture <Combinational>).
+Entity <ALU_Mux> analyzed. Unit <ALU_Mux> generated.
+
+Analyzing Entity <OA_MUX> in library <work> (Architecture <Combinational>).
+Entity <OA_MUX> analyzed. Unit <OA_MUX> generated.
+
+Analyzing Entity <ALU_LATCH> in library <work> (Architecture <Behavior>).
+Entity <ALU_LATCH> analyzed. Unit <ALU_LATCH> generated.
+
+Analyzing Entity <GenPurposeRegBank> in library <work> (Architecture <Behavioral>).
+Entity <GenPurposeRegBank> analyzed. Unit <GenPurposeRegBank> generated.
+
+Analyzing Entity <ShadowRegBank> in library <work> (Architecture <Behavioral>).
+Entity <ShadowRegBank> analyzed. Unit <ShadowRegBank> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <OA_MUX>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/OA_MUX.vhd".
+WARNING:Xst:647 - Input <SEL_IN<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <OA_MUX> synthesized.
+
+
+Synthesizing Unit <ALU_LATCH>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ALU_LATCH.vhd".
+    Found 4-bit register for signal <CCR_OUT>.
+    Found 4-bit register for signal <LOC_OUT>.
+    Found 16-bit register for signal <ALU_OUT>.
+    Found 4-bit register for signal <OP_OUT>.
+    Found 16-bit register for signal <LDST_OUT>.
+    Found 16-bit register for signal <ALU_TMP>.
+    Found 4-bit register for signal <CCR_TMP>.
+    Found 16-bit register for signal <LDST_TMP>.
+    Found 4-bit register for signal <LOC_TMP>.
+    Found 4-bit register for signal <OP_TMP>.
+    Summary:
+	inferred  88 D-type flip-flop(s).
+Unit <ALU_LATCH> synthesized.
+
+
+Synthesizing Unit <GenPurposeRegBank>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/GenPurposeRegBank.vhd".
+WARNING:Xst:647 - Input <RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x16-bit dual-port RAM <Mram_REGFILE> for signal <REGFILE>.
+    Found 16x16-bit dual-port RAM <Mram_REGFILE_ren> for signal <REGFILE>.
+    Found 16-bit register for signal <B_OUT>.
+    Found 16-bit register for signal <A_OUT>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <GenPurposeRegBank> synthesized.
+
+
+Synthesizing Unit <ShadowRegBank>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ShadowRegBank.vhd".
+WARNING:Xst:647 - Input <RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4x16-bit dual-port RAM <Mram_REGFILE> for signal <REGFILE>.
+    Found 16-bit register for signal <REG_OUT>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <ShadowRegBank> synthesized.
+
+
+Synthesizing Unit <Arith_Unit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_arithmetic_unit.vhd".
+    Found 1-bit xor2 for signal <CCR<1>>.
+    Found 17-bit addsub for signal <arith>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Arith_Unit> synthesized.
+
+
+Synthesizing Unit <Logic_Unit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_logic_unit.vhd".
+Unit <Logic_Unit> synthesized.
+
+
+Synthesizing Unit <ALU_Shift_Unit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_shift_unit.vhd".
+    Found 16-bit shifter logical left for signal <shift_left>.
+    Found 16-bit shifter logical right for signal <shift_right>.
+    Summary:
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU_Shift_Unit> synthesized.
+
+
+Synthesizing Unit <Load_Store_Unit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/load_store_unit.vhd".
+WARNING:Xst:647 - Input <IMMED> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <reg>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <Load_Store_Unit> synthesized.
+
+
+Synthesizing Unit <ALU_Mux>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_mux.vhd".
+Unit <ALU_Mux> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_toplevel.vhd".
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <FPU>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd".
+WARNING:Xst:647 - Input <PROGRAM_ADDR<8:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <LDST_OUT> is never assigned.
+WARNING:Xst:646 - Signal <SH_REG_OUT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <SH_REG_LOC> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <SH_NEW_WE> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <SH_NEW_VAL> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <SH_NEW_LOC> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <DM_WRADDR> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
+WARNING:Xst:653 - Signal <DM_WE<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <DM_RDADDR> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
+WARNING:Xst:646 - Signal <DM_OUTDATA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <DM_INDATA> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+Unit <FPU> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+WARNING:Xst:524 - All outputs of the instance <SHRegBank> of the block <ShadowRegBank> are unconnected in block <FPU>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x16-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 1
+ 17-bit addsub                                         : 1
+# Registers                                            : 13
+ 16-bit register                                       : 7
+ 4-bit register                                        : 6
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/Data_Memory.ngc>.
+Reading core <ipcore_dir/ProgMemory.ngc>.
+Loading core <Data_Memory> for timing and area information for instance <Data_Memory>.
+Loading core <ProgMemory> for timing and area information for instance <Program_Memory>.
+
+Synthesizing (advanced) Unit <GenPurposeRegBank>.
+INFO:Xst:3231 - The small RAM <Mram_REGFILE> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 16-bit                    |          |
+    |     clkA           | connected to signal <CLK>           | fall     |
+    |     weA            | connected to signal <NEW_WE>        | high     |
+    |     addrA          | connected to signal <NEW_LOC>       |          |
+    |     diA            | connected to signal <NEW_VAL>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16-word x 16-bit                    |          |
+    |     addrB          | connected to signal <RB_LOC>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_REGFILE_ren> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 16-bit                    |          |
+    |     clkA           | connected to signal <CLK>           | fall     |
+    |     weA            | connected to signal <NEW_WE>        | high     |
+    |     addrA          | connected to signal <NEW_LOC>       |          |
+    |     diA            | connected to signal <NEW_VAL>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16-word x 16-bit                    |          |
+    |     addrB          | connected to signal <RA_LOC>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <GenPurposeRegBank> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x16-bit dual-port distributed RAM                   : 2
+# Adders/Subtractors                                   : 1
+ 17-bit addsub                                         : 1
+# Registers                                            : 136
+ Flip-Flops                                            : 136
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <FPU> ...
+
+Optimizing unit <ALU_LATCH> ...
+
+Optimizing unit <GenPurposeRegBank> ...
+
+Optimizing unit <ShadowRegBank> ...
+
+Optimizing unit <ALU_Shift_Unit> ...
+
+Optimizing unit <Load_Store_Unit> ...
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_15> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_14> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_13> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_12> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_11> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_10> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_9> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_8> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_7> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_6> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_5> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_4> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_3> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_2> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_1> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_OUT_0> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_15> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_14> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_13> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_12> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_11> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_10> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_9> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_8> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_7> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_6> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_5> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_4> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_3> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_2> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_1> of sequential type is unconnected in block <FPU>.
+WARNING:Xst:2677 - Node <ALU_LATCH/LDST_TMP_0> of sequential type is unconnected in block <FPU>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FPU, actual ratio is 4.
+FlipFlop GPRegBank/B_OUT_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 105
+ Flip-Flops                                            : 105
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : FPU.ngr
+Top Level Output File Name         : FPU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 138
+
+Cell Usage :
+# BELS                             : 347
+#      GND                         : 3
+#      INV                         : 2
+#      LUT2                        : 21
+#      LUT3                        : 62
+#      LUT3_D                      : 15
+#      LUT3_L                      : 9
+#      LUT4                        : 139
+#      LUT4_D                      : 8
+#      LUT4_L                      : 29
+#      MUXCY                       : 21
+#      MUXF5                       : 18
+#      VCC                         : 3
+#      XORCY                       : 17
+# FlipFlops/Latches                : 105
+#      FD                          : 45
+#      FD_1                        : 28
+#      FDE                         : 16
+#      FDS                         : 16
+# RAMS                             : 34
+#      RAM16X1D                    : 32
+#      RAMB16_S36_S36              : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 99
+#      IBUF                        : 55
+#      OBUF                        : 44
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      191  out of   4656     4%  
+ Number of Slice Flip Flops:            105  out of   9312     1%  
+ Number of 4 input LUTs:                349  out of   9312     3%  
+    Number used as logic:               285
+    Number used as RAMs:                 64
+ Number of IOs:                         138
+ Number of bonded IOBs:                 100  out of    232    43%  
+ Number of BRAMs:                         2  out of     20    10%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 139   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.885ns (Maximum Frequency: 126.823MHz)
+   Minimum input arrival time before clock: 10.892ns
+   Maximum output required time after clock: 6.492ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 7.885ns (frequency: 126.823MHz)
+  Total number of paths / destination ports: 1793 / 113
+-------------------------------------------------------------------------
+Delay:               7.885ns (Levels of Logic = 18)
+  Source:            GPRegBank/B_OUT_1_1 (FF)
+  Destination:       ALU_LATCH/ALU_TMP_15 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: GPRegBank/B_OUT_1_1 to ALU_LATCH/ALU_TMP_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.482  GPRegBank/B_OUT_1_1 (GPRegBank/B_OUT_1_1)
+     LUT3_D:I2->O          7   0.704   0.743  ALU_MUX/VALB_OUT<1>1_1 (ALU_MUX/VALB_OUT<1>1)
+     LUT3:I2->O            1   0.704   0.000  ALU/Arith_Unit/Maddsub_arith_lut<1> (ALU/Arith_Unit/Maddsub_arith_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  ALU/Arith_Unit/Maddsub_arith_cy<1> (ALU/Arith_Unit/Maddsub_arith_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<2> (ALU/Arith_Unit/Maddsub_arith_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<3> (ALU/Arith_Unit/Maddsub_arith_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<4> (ALU/Arith_Unit/Maddsub_arith_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<5> (ALU/Arith_Unit/Maddsub_arith_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<6> (ALU/Arith_Unit/Maddsub_arith_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<7> (ALU/Arith_Unit/Maddsub_arith_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<8> (ALU/Arith_Unit/Maddsub_arith_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<9> (ALU/Arith_Unit/Maddsub_arith_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<10> (ALU/Arith_Unit/Maddsub_arith_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<11> (ALU/Arith_Unit/Maddsub_arith_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<12> (ALU/Arith_Unit/Maddsub_arith_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<13> (ALU/Arith_Unit/Maddsub_arith_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<14> (ALU/Arith_Unit/Maddsub_arith_cy<14>)
+     XORCY:CI->O           4   0.804   0.591  ALU/Arith_Unit/Maddsub_arith_xor<15> (ALU/arith<15>)
+     LUT4:I3->O            1   0.704   0.420  ALU/ALU_Mux/ALU_OUT<15>24 (ALU/ALU_Mux/ALU_OUT<15>24)
+     FDS:S                     0.911          ALU_LATCH/ALU_TMP_15
+    ----------------------------------------
+    Total                      7.885ns (5.649ns logic, 2.236ns route)
+                                       (71.6% logic, 28.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 4760 / 423
+-------------------------------------------------------------------------
+Offset:              10.892ns (Levels of Logic = 19)
+  Source:            OPCODE<1> (PAD)
+  Destination:       ALU_LATCH/ALU_TMP_15 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: OPCODE<1> to ALU_LATCH/ALU_TMP_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.218   1.158  OPCODE_1_IBUF (OPCODE_1_IBUF)
+     LUT4:I0->O           21   0.704   1.207  ALU/ALU_Mux/ALU_OUT_cmp_eq00001 (ALU/ALU_Mux/ALU_OUT_cmp_eq0000)
+     LUT3:I1->O            1   0.704   0.595  ALU_MUX/VALB_OUT<2>1_SW0 (N57)
+     LUT4:I0->O            1   0.704   0.000  ALU/Arith_Unit/Maddsub_arith_lut<2> (ALU/Arith_Unit/Maddsub_arith_lut<2>)
+     MUXCY:S->O            1   0.464   0.000  ALU/Arith_Unit/Maddsub_arith_cy<2> (ALU/Arith_Unit/Maddsub_arith_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<3> (ALU/Arith_Unit/Maddsub_arith_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<4> (ALU/Arith_Unit/Maddsub_arith_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<5> (ALU/Arith_Unit/Maddsub_arith_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<6> (ALU/Arith_Unit/Maddsub_arith_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<7> (ALU/Arith_Unit/Maddsub_arith_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<8> (ALU/Arith_Unit/Maddsub_arith_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<9> (ALU/Arith_Unit/Maddsub_arith_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<10> (ALU/Arith_Unit/Maddsub_arith_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<11> (ALU/Arith_Unit/Maddsub_arith_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<12> (ALU/Arith_Unit/Maddsub_arith_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<13> (ALU/Arith_Unit/Maddsub_arith_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  ALU/Arith_Unit/Maddsub_arith_cy<14> (ALU/Arith_Unit/Maddsub_arith_cy<14>)
+     XORCY:CI->O           4   0.804   0.591  ALU/Arith_Unit/Maddsub_arith_xor<15> (ALU/arith<15>)
+     LUT4:I3->O            1   0.704   0.420  ALU/ALU_Mux/ALU_OUT<15>24 (ALU/ALU_Mux/ALU_OUT<15>24)
+     FDS:S                     0.911          ALU_LATCH/ALU_TMP_15
+    ----------------------------------------
+    Total                     10.892ns (6.921ns logic, 3.971ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 44 / 44
+-------------------------------------------------------------------------
+Offset:              6.492ns (Levels of Logic = 2)
+  Source:            Program_Memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (RAM)
+  Destination:       FETCH_DATA<15> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Program_Memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram to FETCH_DATA<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S36_S36:CLKB->DOB25    1   2.800   0.420  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (douta<15>)
+     end scope: 'Program_Memory'
+     OBUF:I->O                 3.272          FETCH_DATA_15_OBUF (FETCH_DATA<15>)
+    ----------------------------------------
+    Total                      6.492ns (6.072ns logic, 0.420ns route)
+                                       (93.5% logic, 6.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.73 secs
+ 
+--> 
+
+Total memory usage is 326232 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   53 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

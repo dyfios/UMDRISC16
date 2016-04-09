@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/dbake/Desktop/sandbox/UMDRISC16/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/dbake/Desktop/sandbox/UMDRISC16/xst"
+elaborate
+-ifn Decode.prj
+-ifmt mixed

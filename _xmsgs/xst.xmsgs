@@ -1,0 +1,1906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/dbake/Desktop/sandbox/UMDRISC16/UMDRISC16_TopLevel.vhd</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OP_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">FPU</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/dbake/Desktop/sandbox/ProjectLab1/ProgramCounter.vhd</arg>&quot; line <arg fmt="%d" index="2">35</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;Address&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">VALUE_A</arg>&gt; in unit &lt;<arg fmt="%s" index="2">OaUnit</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000000000000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">BANK_WE</arg>&gt; in unit &lt;<arg fmt="%s" index="2">WB_Unit</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd</arg>&quot; line <arg fmt="%d" index="2">65</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LDST_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU_LATCH</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd</arg>&quot; line <arg fmt="%d" index="2">100</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">Data_Memory</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd</arg>&quot; line <arg fmt="%d" index="2">111</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ProgMemory</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ENB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">RST</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">SR_OA</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">IMM_OA</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ADDR_OA</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CCR_IN</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">LDST_IN</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">SR</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">RB</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">RA</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">OP</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">IMM</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">ADR</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SEL_IN&lt;1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="738" delta="old" >HDL ADVISOR - <arg fmt="%d" index="1">256</arg> flip-flops were inferred for signal &lt;<arg fmt="%s" index="2">REGFILE</arg>&gt;. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">RST</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">IMMED</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">REGBANKHOLDER</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">PC_RST</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">PC_JUMP_ADDR</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">PC_JMP_FLG</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">PC_BR_FLG</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">PC_BR_AMT</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">PROGRAM_ADDR&lt;8:5&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">RA</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">LDST_OUT</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">SH_REG_OUT</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SH_REG_LOC</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SH_NEW_WE</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SH_NEW_VAL</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">SH_NEW_LOC</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DM_WRADDR</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DM_WE&lt;0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DM_RDADDR</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">DM_OUTDATA</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">DM_INDATA</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">REGBANKHOLDER</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">PC_RST</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">PC_JUMP_ADDR</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">PC_JMP_FLG</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">PC_BR_FLG</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">PC_BR_AMT</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">INSTRUCTION</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">DMEMB</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">DMEMA</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="524" delta="old" >All outputs of the instance &lt;<arg fmt="%s" index="1">SHRegBank</arg>&gt; of the block &lt;<arg fmt="%s" index="2">ShadowRegBank</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">FPU</arg>&gt;.
+This instance will be removed from the design along with all underlying logic
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Fetch_Unit</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ControlUnit</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Decode_Unit</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ControlUnit</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">OA_Unit</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ControlUnit</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">WB_Unit</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ControlUnit</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">ALU</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">FPU</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">ALU_MUX</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">FPU</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">ALU_LATCH</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">FPU</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">GPRegBank</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">FPU</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">ITYPE_OUT</arg>&lt;<arg fmt="%d" index="2">2</arg>:<arg fmt="%d" index="3">1</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Decode</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">VALUE_B_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">OaUnit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">VALUE_B_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">OaUnit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">VALUE_B_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">OaUnit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">VALUE_B_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">OaUnit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">VALUE_B_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">OaUnit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">VALUE_B_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">OaUnit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">VALUE_B_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">OaUnit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">VALUE_B_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">OaUnit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">RB_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Decode</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IMM_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">RB_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Decode</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IMM_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">RB_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Decode</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IMM_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">RB_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Decode</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IMM_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">IMM_OUT_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Decode</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;RB_OUT_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">IMM_OUT_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Decode</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;RB_OUT_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">IMM_OUT_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Decode</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;RB_OUT_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">IMM_OUT_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Decode</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;RB_OUT_3&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUT_ADDR_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUT_ADDR_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUT_ADDR_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUT_ADDR_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUT_ADDR_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUT_ADDR_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUT_ADDR_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUT_ADDR_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUT_ADDR_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTRUCTION_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUTADDRESS_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUTADDRESS_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUTADDRESS_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUTADDRESS_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUTADDRESS_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUTADDRESS_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUTADDRESS_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUTADDRESS_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/OUTADDRESS_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Fetch_Unit/INSTR_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADDR_OUT_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADDR_OUT_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADDR_OUT_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADDR_OUT_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADDR_OUT_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADDR_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADDR_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADDR_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADDR_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/OP_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/OP_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/OP_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/OP_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RA_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RA_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RA_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RA_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_OUT_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_OUT_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_OUT_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_OUT_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ITYPE_OUT</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/IMM_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADR_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADR_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADR_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADR_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADR_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADR_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADR_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADR_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/ADR_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RB_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RB_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RB_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RB_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RA_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RA_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RA_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/RA_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/OP_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/OP_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/OP_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/Decode_Unit/OP_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RB_ADDR_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RB_ADDR_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RB_ADDR_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RB_ADDR_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/OP_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/OP_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/OP_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/OP_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RB_OA_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RB_OA_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RB_OA_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RB_OA_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/MUXSEL_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/MUXSEL_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/ITYPE_OA_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/ITYPE_OA_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/ITYPE_OA_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/VALUE_B_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/VALUE_B_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/VALUE_B_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/VALUE_B_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/VALUE_B_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/VALUE_B_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/VALUE_B_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/VALUE_B_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RA_ADDR_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RA_ADDR_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RA_ADDR_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RA_ADDR_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RA_OA_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RA_OA_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RA_OA_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/RA_OA_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/OP_OA_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/OP_OA_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/OP_OA_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/OA_Unit/OP_OA_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_VAL_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_ADDR_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_ADDR_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_ADDR_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ControlUnit/WB_Unit/BANK_ADDR_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/OP_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/OP_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/OP_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/OP_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LOC_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LOC_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LOC_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LOC_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/CCR_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/CCR_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/CCR_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/CCR_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/ALU_TMP_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LOC_TMP_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LOC_TMP_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LOC_TMP_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LOC_TMP_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/CCR_TMP_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/CCR_TMP_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/CCR_TMP_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/CCR_TMP_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/OP_TMP_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/OP_TMP_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/OP_TMP_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/OP_TMP_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU_LATCH/LDST_TMP_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/A_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/B_OUT_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_14_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_13_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_15_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_12_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_10_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_9_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_11_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_8_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_7_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_5_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_4_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_6_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_3_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_0_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/GPRegBank/REGFILE_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">FPU/ALU/Load_Store_Unit/reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UMDRISC16_TopLevel</arg>&gt;.
+</msg>
+
+</messages>
+

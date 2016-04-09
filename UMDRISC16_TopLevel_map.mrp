@@ -1,0 +1,277 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'UMDRISC16_TopLevel'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o UMDRISC16_TopLevel_map.ncd UMDRISC16_TopLevel.ngd
+UMDRISC16_TopLevel.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sun Apr 03 11:12:05 2016
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   2
+
+Section 1 - Errors
+------------------
+ERROR:Pack:198 - NCD was not produced.  All logic was removed from the design. 
+   This is usually due to having no input or output PAD connections in the
+   design and no nets or symbols marked as 'SAVE'.  You can either add PADs or
+   'SAVE' attributes to the design, or run 'map -u' to disable logic trimming in
+   the mapper.  For more information on trimming issues search the Xilinx
+   Answers database for "ERROR:Pack:198" and read the Master Answer Record for
+   MAP Trimming Issues.
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal RST connected to top level port RST has been
+   removed.
+WARNING:MapLib:701 - Signal CLK connected to top level port CLK has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network ENB_EX has no load.
+INFO:LIT:395 - The above info message is repeated 36 more times for the
+   following (max. 5 shown):
+   ENB_FETCH,
+   ENB_OA,
+   ENB_DEC,
+   ENB_WB,
+   FPU/Program_Memory/douta<15>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  52 block(s) removed
+  82 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "CLK_BUFGP/IBUFG" is sourceless and has been removed.
+ Sourceless block "CLK_BUFGP/BUFG" (CKBUF) removed.
+  The signal "CLK_BUFGP" is sourceless and has been removed.
+   Sourceless block "ControlUnit/Program_Counter/Address_0" (FF) removed.
+    The signal "ControlUnit/Program_Counter/Address<0>" is sourceless and has been
+removed.
+     Sourceless block "ControlUnit/Program_Counter/Maccum_Address_lut<0>_INV_0" (BUF)
+removed.
+      The signal "ControlUnit/Program_Counter/Maccum_Address_lut<0>" is sourceless and
+has been removed.
+       Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<0>" (MUX)
+removed.
+        The signal "ControlUnit/Program_Counter/Maccum_Address_cy<0>" is sourceless and
+has been removed.
+         Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<1>" (MUX)
+removed.
+          The signal "ControlUnit/Program_Counter/Maccum_Address_cy<1>" is sourceless and
+has been removed.
+           Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<2>" (MUX)
+removed.
+            The signal "ControlUnit/Program_Counter/Maccum_Address_cy<2>" is sourceless and
+has been removed.
+             Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<3>" (MUX)
+removed.
+              The signal "ControlUnit/Program_Counter/Maccum_Address_cy<3>" is sourceless and
+has been removed.
+               Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<4>" (MUX)
+removed.
+                The signal "ControlUnit/Program_Counter/Maccum_Address_cy<4>" is sourceless and
+has been removed.
+                 Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<5>" (MUX)
+removed.
+                  The signal "ControlUnit/Program_Counter/Maccum_Address_cy<5>" is sourceless and
+has been removed.
+                   Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<6>" (MUX)
+removed.
+                    The signal "ControlUnit/Program_Counter/Maccum_Address_cy<6>" is sourceless and
+has been removed.
+                     Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<7>" (MUX)
+removed.
+                      The signal "ControlUnit/Program_Counter/Maccum_Address_cy<7>" is sourceless and
+has been removed.
+                       Sourceless block "ControlUnit/Program_Counter/Maccum_Address_xor<8>" (XOR)
+removed.
+                        The signal "ControlUnit/Program_Counter/Result<8>" is sourceless and has been
+removed.
+                         Sourceless block "ControlUnit/Program_Counter/Address_8" (FF) removed.
+                          The signal "ControlUnit/Program_Counter/Address<8>" is sourceless and has been
+removed.
+                           Sourceless block "ControlUnit/Program_Counter/Maccum_Address_xor<8>_rt" (ROM)
+removed.
+                            The signal "ControlUnit/Program_Counter/Maccum_Address_xor<8>_rt" is sourceless
+and has been removed.
+                           Sourceless block "ControlUnit/Program_Counter/Address_or000011_f5" (MUX)
+removed.
+                            The signal "ControlUnit/Program_Counter/Address_or000011" is sourceless and has
+been removed.
+                             Sourceless block "ControlUnit/Program_Counter/Address_or000022" (ROM) removed.
+                              The signal "ControlUnit/Program_Counter/Address_or0000" is sourceless and has
+been removed.
+                               Sourceless block "ControlUnit/Program_Counter/Address_1" (FF) removed.
+                                The signal "ControlUnit/Program_Counter/Address<1>" is sourceless and has been
+removed.
+                                 Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<1>_rt" (ROM)
+removed.
+                                  The signal "ControlUnit/Program_Counter/Maccum_Address_cy<1>_rt" is sourceless
+and has been removed.
+                                   Sourceless block "ControlUnit/Program_Counter/Maccum_Address_xor<1>" (XOR)
+removed.
+                                    The signal "ControlUnit/Program_Counter/Result<1>" is sourceless and has been
+removed.
+                                 Sourceless block "ControlUnit/Program_Counter/Address_or0000111" (ROM) removed.
+                                  The signal "ControlUnit/Program_Counter/Address_or0000111" is sourceless and has
+been removed.
+                               Sourceless block "ControlUnit/Program_Counter/Address_2" (FF) removed.
+                                The signal "ControlUnit/Program_Counter/Address<2>" is sourceless and has been
+removed.
+                                 Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<2>_rt" (ROM)
+removed.
+                                  The signal "ControlUnit/Program_Counter/Maccum_Address_cy<2>_rt" is sourceless
+and has been removed.
+                                   Sourceless block "ControlUnit/Program_Counter/Maccum_Address_xor<2>" (XOR)
+removed.
+                                    The signal "ControlUnit/Program_Counter/Result<2>" is sourceless and has been
+removed.
+                               Sourceless block "ControlUnit/Program_Counter/Address_3" (FF) removed.
+                                The signal "ControlUnit/Program_Counter/Address<3>" is sourceless and has been
+removed.
+                                 Sourceless block "ControlUnit/Program_Counter/Address_or00004" (ROM) removed.
+                                  The signal "ControlUnit/Program_Counter/Address_or00004" is sourceless and has
+been removed.
+                                 Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<3>_rt" (ROM)
+removed.
+                                  The signal "ControlUnit/Program_Counter/Maccum_Address_cy<3>_rt" is sourceless
+and has been removed.
+                                   Sourceless block "ControlUnit/Program_Counter/Maccum_Address_xor<3>" (XOR)
+removed.
+                                    The signal "ControlUnit/Program_Counter/Result<3>" is sourceless and has been
+removed.
+                               Sourceless block "ControlUnit/Program_Counter/Address_4" (FF) removed.
+                                The signal "ControlUnit/Program_Counter/Address<4>" is sourceless and has been
+removed.
+                                 Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<4>_rt" (ROM)
+removed.
+                                  The signal "ControlUnit/Program_Counter/Maccum_Address_cy<4>_rt" is sourceless
+and has been removed.
+                                   Sourceless block "ControlUnit/Program_Counter/Maccum_Address_xor<4>" (XOR)
+removed.
+                                    The signal "ControlUnit/Program_Counter/Result<4>" is sourceless and has been
+removed.
+                               Sourceless block "ControlUnit/Program_Counter/Address_5" (FF) removed.
+                                The signal "ControlUnit/Program_Counter/Address<5>" is sourceless and has been
+removed.
+                                 Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<5>_rt" (ROM)
+removed.
+                                  The signal "ControlUnit/Program_Counter/Maccum_Address_cy<5>_rt" is sourceless
+and has been removed.
+                                   Sourceless block "ControlUnit/Program_Counter/Maccum_Address_xor<5>" (XOR)
+removed.
+                                    The signal "ControlUnit/Program_Counter/Result<5>" is sourceless and has been
+removed.
+                               Sourceless block "ControlUnit/Program_Counter/Address_6" (FF) removed.
+                                The signal "ControlUnit/Program_Counter/Address<6>" is sourceless and has been
+removed.
+                                 Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<6>_rt" (ROM)
+removed.
+                                  The signal "ControlUnit/Program_Counter/Maccum_Address_cy<6>_rt" is sourceless
+and has been removed.
+                                   Sourceless block "ControlUnit/Program_Counter/Maccum_Address_xor<6>" (XOR)
+removed.
+                                    The signal "ControlUnit/Program_Counter/Result<6>" is sourceless and has been
+removed.
+                               Sourceless block "ControlUnit/Program_Counter/Address_7" (FF) removed.
+                                The signal "ControlUnit/Program_Counter/Address<7>" is sourceless and has been
+removed.
+                                 Sourceless block "ControlUnit/Program_Counter/Maccum_Address_cy<7>_rt" (ROM)
+removed.
+                                  The signal "ControlUnit/Program_Counter/Maccum_Address_cy<7>_rt" is sourceless
+and has been removed.
+                                   Sourceless block "ControlUnit/Program_Counter/Maccum_Address_xor<7>" (XOR)
+removed.
+                                    The signal "ControlUnit/Program_Counter/Result<7>" is sourceless and has been
+removed.
+       Sourceless block "ControlUnit/Program_Counter/Maccum_Address_xor<0>" (XOR)
+removed.
+        The signal "ControlUnit/Program_Counter/Result<0>" is sourceless and has been
+removed.
+The signal "FPU/Program_Memory/douta<15>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<14>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<13>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<12>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<11>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<10>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<9>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<8>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<7>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<6>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<5>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<4>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<3>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<2>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<1>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/douta<0>" is sourceless and has been removed.
+The signal "FPU/Program_Memory/N0" is sourceless and has been removed.
+The signal "FPU/Program_Memory/N1" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<15>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<14>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<13>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<12>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<11>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<10>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<9>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<8>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<7>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<6>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<5>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<4>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<3>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<2>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<1>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/doutb<0>" is sourceless and has been removed.
+The signal "FPU/Data_Memory/N0" is sourceless and has been removed.
+The signal "FPU/Data_Memory/N1" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "CLK" is unused and has been removed.
+ Unused block "CLK" (PAD) removed.
+The signal "N0" is unused and has been removed.
+ Unused block "XST_GND" (ZERO) removed.
+The signal "N1" is unused and has been removed.
+ Unused block "XST_VCC" (ONE) removed.
+The signal "RST" is unused and has been removed.
+ Unused block "RST" (PAD) removed.
+The signal "RST_IBUF" is unused and has been removed.
+ Unused block "RST_IBUF" (BUF) removed.
+Unused block
+"FPU/Data_Memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cs
+tr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram" (RAMB16_S36_S36) removed.
+Unused block "FPU/Data_Memory/XST_GND" (ZERO) removed.
+Unused block "FPU/Data_Memory/XST_VCC" (ONE) removed.
+Unused block
+"FPU/Program_Memory/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid
+.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram" (RAMB16_S36_S36) removed.
+Unused block "FPU/Program_Memory/XST_GND" (ZERO) removed.
+Unused block "FPU/Program_Memory/XST_VCC" (ONE) removed.
+Unused block "CLK_BUFGP/IBUFG" (CKBUF) removed.

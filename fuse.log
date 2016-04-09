@@ -1,0 +1,70 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/dbake/Desktop/sandbox/UMDRISC16/TLTEST_isim_beh.exe" -prj "C:/Users/dbake/Desktop/sandbox/UMDRISC16/TLTEST_beh.prj" "work.TLTEST" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/load_store_unit.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_shift_unit.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_mux.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_logic_unit.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_arithmetic_unit.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/WB_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ShadowRegBank.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/OA_MUX.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/OaUnit.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ipcore_dir/NewInstMem.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ipcore_dir/Data_Memory.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/GenPurposeRegBank.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FetchUnit.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/Decode.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_toplevel.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ALU_LATCH.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/../ProjectLab1/ProgramCounter.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ControlUnit.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/UMDRISC16_TopLevel.vhd" into library work
+Parsing VHDL file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/TLTEST.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity FetchUnit [fetchunit_default]
+Compiling architecture behavior of entity Decode [decode_default]
+Compiling architecture behavioral of entity OaUnit [oaunit_default]
+Compiling architecture behavior of entity WB_Unit [wb_unit_default]
+Compiling architecture structural of entity ControlUnit [controlunit_default]
+Compiling package numeric_std
+Compiling architecture combinational of entity Arith_Unit [arith_unit_default]
+Compiling architecture combinational of entity Logic_Unit [logic_unit_default]
+Compiling architecture combinational of entity ALU_Shift_Unit [alu_shift_unit_default]
+Compiling architecture behavioral of entity Load_Store_Unit [load_store_unit_default]
+Compiling architecture combinational of entity ALU_Mux [alu_mux_default]
+Compiling architecture structural of entity ALU [alu_default]
+Compiling architecture combinational of entity OA_MUX [oa_mux_default]
+Compiling architecture behavior of entity ALU_LATCH [alu_latch_default]
+Compiling architecture behavioral of entity GenPurposeRegBank [genpurposeregbank_default]
+Compiling architecture behavioral of entity ShadowRegBank [shadowregbank_default]
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture data_memory_a of entity Data_Memory [data_memory_default]
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V7_3_output_stage [\BLK_MEM_GEN_V7_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V7_3_softecc_output_reg_stage [\BLK_MEM_GEN_V7_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V7_3_mem_module [\BLK_MEM_GEN_V7_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V7_3 [\BLK_MEM_GEN_V7_3("blk_mem_gen_v...]
+Compiling architecture newinstmem_a of entity NewInstMem [newinstmem_default]
+Compiling architecture structural of entity FPU [fpu_default]
+Compiling architecture structural of entity UMDRISC16_TopLevel [umdrisc16_toplevel_default]
+Compiling architecture behavior of entity tltest
+Time Resolution for simulation is 1ps.
+Waiting for 24 sub-compilation(s) to finish...
+Compiled 64 VHDL Units
+Built simulation executable C:/Users/dbake/Desktop/sandbox/UMDRISC16/TLTEST_isim_beh.exe
+Fuse Memory Usage: 42364 KB
+Fuse CPU Usage: 1140 ms

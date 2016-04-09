@@ -1,0 +1,1329 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: UMDRISC16_TopLevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "UMDRISC16_TopLevel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "UMDRISC16_TopLevel"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : UMDRISC16_TopLevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_arithmetic_unit.vhd" in Library work.
+Architecture combinational of Entity arith_unit is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_logic_unit.vhd" in Library work.
+Entity <logic_unit> compiled.
+Entity <logic_unit> (Architecture <combinational>) compiled.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_shift_unit.vhd" in Library work.
+Architecture combinational of Entity alu_shift_unit is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/load_store_unit.vhd" in Library work.
+Architecture behavioral of Entity load_store_unit is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_mux.vhd" in Library work.
+Architecture combinational of Entity alu_mux is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_toplevel.vhd" in Library work.
+Architecture structural of Entity alu is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/OA_MUX.vhd" in Library work.
+Architecture combinational of Entity oa_mux is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ALU_LATCH.vhd" in Library work.
+Entity <alu_latch> compiled.
+Entity <alu_latch> (Architecture <behavior>) compiled.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/GenPurposeRegBank.vhd" in Library work.
+Entity <genpurposeregbank> compiled.
+Entity <genpurposeregbank> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ShadowRegBank.vhd" in Library work.
+Architecture behavioral of Entity shadowregbank is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ipcore_dir/Data_Memory.vhd" in Library work.
+Architecture data_memory_a of Entity data_memory is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ipcore_dir/ProgMemory.vhd" in Library work.
+Architecture progmemory_a of Entity progmemory is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/ProjectLab1/ProgramCounter.vhd" in Library work.
+Entity <programcounter> compiled.
+Entity <programcounter> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FetchUnit.vhd" in Library work.
+Entity <fetchunit> compiled.
+Entity <fetchunit> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/Decode.vhd" in Library work.
+Entity <decode> compiled.
+Entity <decode> (Architecture <behavior>) compiled.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/OaUnit.vhd" in Library work.
+Entity <oaunit> compiled.
+Entity <oaunit> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/WB_Unit.vhd" in Library work.
+Entity <wb_unit> compiled.
+Entity <wb_unit> (Architecture <behavior>) compiled.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ControlUnit.vhd" in Library work.
+Architecture structural of Entity controlunit is up to date.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd" in Library work.
+Entity <fpu> compiled.
+Entity <fpu> (Architecture <structural>) compiled.
+Compiling vhdl file "C:/Users/dbake/Desktop/sandbox/UMDRISC16/UMDRISC16_TopLevel.vhd" in Library work.
+Entity <umdrisc16_toplevel> compiled.
+Entity <umdrisc16_toplevel> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <UMDRISC16_TopLevel> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <ControlUnit> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <FPU> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <ProgramCounter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <FetchUnit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Decode> in library <work> (architecture <Behavior>).
+
+Analyzing hierarchy for entity <OaUnit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <WB_Unit> in library <work> (architecture <Behavior>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <OA_MUX> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <ALU_LATCH> in library <work> (architecture <Behavior>).
+
+Analyzing hierarchy for entity <GenPurposeRegBank> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ShadowRegBank> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Arith_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <Logic_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <ALU_Shift_Unit> in library <work> (architecture <Combinational>).
+
+Analyzing hierarchy for entity <Load_Store_Unit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ALU_Mux> in library <work> (architecture <Combinational>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <UMDRISC16_TopLevel> in library <work> (Architecture <structural>).
+WARNING:Xst:753 - "C:/Users/dbake/Desktop/sandbox/UMDRISC16/UMDRISC16_TopLevel.vhd" line 62: Unconnected output port 'OP_OUT' of component 'FPU'.
+Entity <UMDRISC16_TopLevel> analyzed. Unit <UMDRISC16_TopLevel> generated.
+
+Analyzing Entity <ControlUnit> in library <work> (Architecture <Structural>).
+Entity <ControlUnit> analyzed. Unit <ControlUnit> generated.
+
+Analyzing Entity <ProgramCounter> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "C:/Users/dbake/Desktop/sandbox/ProjectLab1/ProgramCounter.vhd" line 35: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Address>
+Entity <ProgramCounter> analyzed. Unit <ProgramCounter> generated.
+
+Analyzing Entity <FetchUnit> in library <work> (Architecture <Behavioral>).
+Entity <FetchUnit> analyzed. Unit <FetchUnit> generated.
+
+Analyzing Entity <Decode> in library <work> (Architecture <Behavior>).
+Entity <Decode> analyzed. Unit <Decode> generated.
+
+Analyzing Entity <OaUnit> in library <work> (Architecture <Behavioral>).
+INFO:Xst:2679 - Register <VALUE_A> in unit <OaUnit> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+Entity <OaUnit> analyzed. Unit <OaUnit> generated.
+
+Analyzing Entity <WB_Unit> in library <work> (Architecture <Behavior>).
+INFO:Xst:2679 - Register <BANK_WE> in unit <WB_Unit> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <WB_Unit> analyzed. Unit <WB_Unit> generated.
+
+Analyzing Entity <FPU> in library <work> (Architecture <Structural>).
+WARNING:Xst:753 - "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd" line 65: Unconnected output port 'LDST_OUT' of component 'ALU_LATCH'.
+WARNING:Xst:2211 - "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd" line 100: Instantiating black box module <Data_Memory>.
+WARNING:Xst:2211 - "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd" line 111: Instantiating black box module <ProgMemory>.
+Entity <FPU> analyzed. Unit <FPU> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <Structural>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <Arith_Unit> in library <work> (Architecture <Combinational>).
+Entity <Arith_Unit> analyzed. Unit <Arith_Unit> generated.
+
+Analyzing Entity <Logic_Unit> in library <work> (Architecture <Combinational>).
+Entity <Logic_Unit> analyzed. Unit <Logic_Unit> generated.
+
+Analyzing Entity <ALU_Shift_Unit> in library <work> (Architecture <Combinational>).
+Entity <ALU_Shift_Unit> analyzed. Unit <ALU_Shift_Unit> generated.
+
+Analyzing Entity <Load_Store_Unit> in library <work> (Architecture <Behavioral>).
+Entity <Load_Store_Unit> analyzed. Unit <Load_Store_Unit> generated.
+
+Analyzing Entity <ALU_Mux> in library <work> (Architecture <Combinational>).
+Entity <ALU_Mux> analyzed. Unit <ALU_Mux> generated.
+
+Analyzing Entity <OA_MUX> in library <work> (Architecture <Combinational>).
+Entity <OA_MUX> analyzed. Unit <OA_MUX> generated.
+
+Analyzing Entity <ALU_LATCH> in library <work> (Architecture <Behavior>).
+Entity <ALU_LATCH> analyzed. Unit <ALU_LATCH> generated.
+
+Analyzing Entity <GenPurposeRegBank> in library <work> (Architecture <Behavioral>).
+Entity <GenPurposeRegBank> analyzed. Unit <GenPurposeRegBank> generated.
+
+Analyzing Entity <ShadowRegBank> in library <work> (Architecture <Behavioral>).
+Entity <ShadowRegBank> analyzed. Unit <ShadowRegBank> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ProgramCounter>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/ProjectLab1/ProgramCounter.vhd".
+WARNING:Xst:647 - Input <ENB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 9-bit register for signal <Address>.
+    Found 9-bit adder for signal <Address$addsub0000>.
+    Found 9-bit comparator greatequal for signal <Address$cmp_ge0000> created at line 38.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <ProgramCounter> synthesized.
+
+
+Synthesizing Unit <FetchUnit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FetchUnit.vhd".
+WARNING:Xst:647 - Input <RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <INSTRUCTION>.
+    Found 9-bit register for signal <OUT_ADDR>.
+    Found 16-bit register for signal <INSTR>.
+    Found 9-bit register for signal <OUTADDRESS>.
+    Summary:
+	inferred  50 D-type flip-flop(s).
+Unit <FetchUnit> synthesized.
+
+
+Synthesizing Unit <Decode>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/Decode.vhd".
+    Register <SR> equivalent to <RA> has been removed
+    Register <SR_OUT> equivalent to <RA_OUT> has been removed
+    Found 3-bit register for signal <ITYPE_OUT>.
+    Found 8-bit register for signal <IMM_OUT>.
+    Found 4-bit register for signal <OP_OUT>.
+    Found 4-bit register for signal <RA_OUT>.
+    Found 9-bit register for signal <ADDR_OUT>.
+    Found 4-bit register for signal <RB_OUT>.
+    Found 9-bit register for signal <ADR>.
+    Found 8-bit register for signal <IMM>.
+    Found 4-bit comparator greater for signal <ITYPE_OUT$cmp_gt0000> created at line 61.
+    Found 4-bit comparator greater for signal <ITYPE_OUT$cmp_gt0001> created at line 60.
+    Found 4-bit comparator lessequal for signal <ITYPE_OUT$cmp_le0000> created at line 60.
+    Found 4-bit register for signal <OP>.
+    Found 4-bit register for signal <RA>.
+    Found 4-bit register for signal <RB>.
+    Summary:
+	inferred  61 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <Decode> synthesized.
+
+
+Synthesizing Unit <OaUnit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/OaUnit.vhd".
+WARNING:Xst:646 - Signal <SR_OA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <IMM_OA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ADDR_OA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit register for signal <OP_OUT>.
+    Found 4-bit register for signal <RA_ADDR>.
+    Found 16-bit register for signal <VALUE_B>.
+    Found 2-bit register for signal <MUXSEL>.
+    Found 4-bit register for signal <RB_ADDR>.
+    Found 3-bit register for signal <ITYPE_OA>.
+    Found 4-bit register for signal <OP_OA>.
+    Found 4-bit register for signal <RA_OA>.
+    Found 4-bit register for signal <RB_OA>.
+    Summary:
+	inferred  45 D-type flip-flop(s).
+Unit <OaUnit> synthesized.
+
+
+Synthesizing Unit <WB_Unit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/WB_Unit.vhd".
+WARNING:Xst:647 - Input <CCR_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LDST_IN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <SR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <RB> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <RA> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <OP> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <IMM> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ADR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit register for signal <BANK_ADDR>.
+    Found 16-bit register for signal <BANK_VAL>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <WB_Unit> synthesized.
+
+
+Synthesizing Unit <OA_MUX>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/OA_MUX.vhd".
+WARNING:Xst:647 - Input <SEL_IN<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <OA_MUX> synthesized.
+
+
+Synthesizing Unit <ALU_LATCH>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ALU_LATCH.vhd".
+    Found 4-bit register for signal <CCR_OUT>.
+    Found 4-bit register for signal <LOC_OUT>.
+    Found 16-bit register for signal <ALU_OUT>.
+    Found 4-bit register for signal <OP_OUT>.
+    Found 16-bit register for signal <LDST_OUT>.
+    Found 16-bit register for signal <ALU_TMP>.
+    Found 4-bit register for signal <CCR_TMP>.
+    Found 16-bit register for signal <LDST_TMP>.
+    Found 4-bit register for signal <LOC_TMP>.
+    Found 4-bit register for signal <OP_TMP>.
+    Summary:
+	inferred  88 D-type flip-flop(s).
+Unit <ALU_LATCH> synthesized.
+
+
+Synthesizing Unit <GenPurposeRegBank>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/GenPurposeRegBank.vhd".
+    Found 16-bit register for signal <B_OUT>.
+    Found 16-bit register for signal <A_OUT>.
+    Found 16-bit 16-to-1 multiplexer for signal <$varindex0000> created at line 36.
+    Found 16-bit 16-to-1 multiplexer for signal <$varindex0001> created at line 35.
+    Found 256-bit register for signal <REGFILE>.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <REGFILE>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 288 D-type flip-flop(s).
+	inferred  32 Multiplexer(s).
+Unit <GenPurposeRegBank> synthesized.
+
+
+Synthesizing Unit <ShadowRegBank>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ShadowRegBank.vhd".
+WARNING:Xst:647 - Input <RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4x16-bit dual-port RAM <Mram_REGFILE> for signal <REGFILE>.
+    Found 16-bit register for signal <REG_OUT>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <ShadowRegBank> synthesized.
+
+
+Synthesizing Unit <Arith_Unit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_arithmetic_unit.vhd".
+    Found 1-bit xor2 for signal <CCR<1>>.
+    Found 17-bit addsub for signal <arith>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Arith_Unit> synthesized.
+
+
+Synthesizing Unit <Logic_Unit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_logic_unit.vhd".
+Unit <Logic_Unit> synthesized.
+
+
+Synthesizing Unit <ALU_Shift_Unit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_shift_unit.vhd".
+    Found 16-bit shifter logical left for signal <shift_left>.
+    Found 16-bit shifter logical right for signal <shift_right>.
+    Summary:
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU_Shift_Unit> synthesized.
+
+
+Synthesizing Unit <Load_Store_Unit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/load_store_unit.vhd".
+WARNING:Xst:647 - Input <IMMED> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <reg>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <Load_Store_Unit> synthesized.
+
+
+Synthesizing Unit <ALU_Mux>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_mux.vhd".
+Unit <ALU_Mux> synthesized.
+
+
+Synthesizing Unit <ControlUnit>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ControlUnit.vhd".
+WARNING:Xst:1780 - Signal <REGBANKHOLDER> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC_RST> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <PC_JUMP_ADDR> is used but never assigned. This sourceless signal will be automatically connected to value 000000000.
+WARNING:Xst:653 - Signal <PC_JMP_FLG> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <PC_BR_FLG> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <PC_BR_AMT> is used but never assigned. This sourceless signal will be automatically connected to value 000000000.
+Unit <ControlUnit> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/alu_toplevel.vhd".
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <FPU>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/FPU.vhd".
+WARNING:Xst:647 - Input <PROGRAM_ADDR<8:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <LDST_OUT> is never assigned. Tied to value 0000000000000000.
+WARNING:Xst:646 - Signal <SH_REG_OUT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <SH_REG_LOC> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <SH_NEW_WE> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <SH_NEW_VAL> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <SH_NEW_LOC> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <DM_WRADDR> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
+WARNING:Xst:653 - Signal <DM_WE<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <DM_RDADDR> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
+WARNING:Xst:646 - Signal <DM_OUTDATA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <DM_INDATA> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+Unit <FPU> synthesized.
+
+
+Synthesizing Unit <UMDRISC16_TopLevel>.
+    Related source file is "C:/Users/dbake/Desktop/sandbox/UMDRISC16/UMDRISC16_TopLevel.vhd".
+WARNING:Xst:1780 - Signal <REGBANKHOLDER> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC_RST> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC_JUMP_ADDR> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC_JMP_FLG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC_BR_FLG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC_BR_AMT> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <INSTRUCTION> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <DMEMB> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <DMEMA> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <UMDRISC16_TopLevel> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+WARNING:Xst:524 - All outputs of the instance <SHRegBank> of the block <ShadowRegBank> are unconnected in block <FPU>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 17-bit addsub                                         : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 56
+ 16-bit register                                       : 27
+ 2-bit register                                        : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 19
+ 8-bit register                                        : 2
+ 9-bit register                                        : 5
+# Comparators                                          : 4
+ 4-bit comparator greater                              : 2
+ 4-bit comparator lessequal                            : 1
+ 9-bit comparator greatequal                           : 1
+# Multiplexers                                         : 2
+ 16-bit 16-to-1 multiplexer                            : 2
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/Data_Memory.ngc>.
+Reading core <ipcore_dir/ProgMemory.ngc>.
+Loading core <Data_Memory> for timing and area information for instance <Data_Memory>.
+Loading core <ProgMemory> for timing and area information for instance <Program_Memory>.
+WARNING:Xst:1290 - Hierarchical block <Fetch_Unit> is unconnected in block <ControlUnit>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Decode_Unit> is unconnected in block <ControlUnit>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OA_Unit> is unconnected in block <ControlUnit>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <WB_Unit> is unconnected in block <ControlUnit>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ALU> is unconnected in block <FPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ALU_MUX> is unconnected in block <FPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ALU_LATCH> is unconnected in block <FPU>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <GPRegBank> is unconnected in block <FPU>.
+   It will be removed from the design.
+WARNING:Xst:2404 -  FFs/Latches <ITYPE_OUT<2:1>> (without init value) have a constant value of 0 in block <Decode>.
+
+Synthesizing (advanced) Unit <ProgramCounter>.
+The following registers are absorbed into accumulator <Address>: 1 register on signal <Address>.
+Unit <ProgramCounter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 17-bit addsub                                         : 1
+# Accumulators                                         : 1
+ 9-bit up loadable accumulator                         : 1
+# Registers                                            : 566
+ Flip-Flops                                            : 566
+# Comparators                                          : 4
+ 4-bit comparator greater                              : 2
+ 4-bit comparator lessequal                            : 1
+ 9-bit comparator greatequal                           : 1
+# Multiplexers                                         : 32
+ 1-bit 16-to-1 multiplexer                             : 32
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <VALUE_B_8> (without init value) has a constant value of 0 in block <OaUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VALUE_B_9> (without init value) has a constant value of 0 in block <OaUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VALUE_B_10> (without init value) has a constant value of 0 in block <OaUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VALUE_B_11> (without init value) has a constant value of 0 in block <OaUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VALUE_B_12> (without init value) has a constant value of 0 in block <OaUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VALUE_B_13> (without init value) has a constant value of 0 in block <OaUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VALUE_B_14> (without init value) has a constant value of 0 in block <OaUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VALUE_B_15> (without init value) has a constant value of 0 in block <OaUnit>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <RB_0> in Unit <Decode> is equivalent to the following FF/Latch, which will be removed : <IMM_4> 
+INFO:Xst:2261 - The FF/Latch <RB_1> in Unit <Decode> is equivalent to the following FF/Latch, which will be removed : <IMM_5> 
+INFO:Xst:2261 - The FF/Latch <RB_2> in Unit <Decode> is equivalent to the following FF/Latch, which will be removed : <IMM_6> 
+INFO:Xst:2261 - The FF/Latch <RB_3> in Unit <Decode> is equivalent to the following FF/Latch, which will be removed : <IMM_7> 
+INFO:Xst:2261 - The FF/Latch <IMM_OUT_4> in Unit <Decode> is equivalent to the following FF/Latch, which will be removed : <RB_OUT_0> 
+INFO:Xst:2261 - The FF/Latch <IMM_OUT_5> in Unit <Decode> is equivalent to the following FF/Latch, which will be removed : <RB_OUT_1> 
+INFO:Xst:2261 - The FF/Latch <IMM_OUT_6> in Unit <Decode> is equivalent to the following FF/Latch, which will be removed : <RB_OUT_2> 
+INFO:Xst:2261 - The FF/Latch <IMM_OUT_7> in Unit <Decode> is equivalent to the following FF/Latch, which will be removed : <RB_OUT_3> 
+
+Optimizing unit <UMDRISC16_TopLevel> ...
+
+Optimizing unit <ProgramCounter> ...
+
+Optimizing unit <FetchUnit> ...
+
+Optimizing unit <Decode> ...
+
+Optimizing unit <OaUnit> ...
+
+Optimizing unit <WB_Unit> ...
+
+Optimizing unit <ALU_LATCH> ...
+
+Optimizing unit <GenPurposeRegBank> ...
+
+Optimizing unit <ShadowRegBank> ...
+
+Optimizing unit <ALU_Shift_Unit> ...
+
+Optimizing unit <Load_Store_Unit> ...
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUT_ADDR_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUT_ADDR_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUT_ADDR_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUT_ADDR_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUT_ADDR_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUT_ADDR_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUT_ADDR_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUT_ADDR_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUT_ADDR_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTRUCTION_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUTADDRESS_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUTADDRESS_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUTADDRESS_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUTADDRESS_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUTADDRESS_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUTADDRESS_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUTADDRESS_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUTADDRESS_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/OUTADDRESS_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Fetch_Unit/INSTR_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADDR_OUT_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADDR_OUT_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADDR_OUT_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADDR_OUT_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADDR_OUT_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADDR_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADDR_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADDR_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADDR_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/OP_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/OP_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/OP_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/OP_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RA_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RA_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RA_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RA_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_OUT_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_OUT_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_OUT_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_OUT_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ITYPE_OUT> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/IMM_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADR_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADR_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADR_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADR_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADR_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADR_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADR_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADR_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/ADR_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RB_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RB_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RB_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RB_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RA_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RA_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RA_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/RA_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/OP_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/OP_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/OP_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/Decode_Unit/OP_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RB_ADDR_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RB_ADDR_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RB_ADDR_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RB_ADDR_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/OP_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/OP_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/OP_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/OP_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RB_OA_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RB_OA_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RB_OA_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RB_OA_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/MUXSEL_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/MUXSEL_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/ITYPE_OA_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/ITYPE_OA_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/ITYPE_OA_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/VALUE_B_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/VALUE_B_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/VALUE_B_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/VALUE_B_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/VALUE_B_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/VALUE_B_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/VALUE_B_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/VALUE_B_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RA_ADDR_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RA_ADDR_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RA_ADDR_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RA_ADDR_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RA_OA_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RA_OA_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RA_OA_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/RA_OA_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/OP_OA_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/OP_OA_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/OP_OA_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/OA_Unit/OP_OA_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_VAL_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_ADDR_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_ADDR_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_ADDR_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <ControlUnit/WB_Unit/BANK_ADDR_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/OP_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/OP_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/OP_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/OP_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LOC_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LOC_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LOC_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LOC_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/CCR_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/CCR_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/CCR_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/CCR_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/ALU_TMP_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LOC_TMP_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LOC_TMP_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LOC_TMP_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LOC_TMP_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/CCR_TMP_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/CCR_TMP_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/CCR_TMP_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/CCR_TMP_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/OP_TMP_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/OP_TMP_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/OP_TMP_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/OP_TMP_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU_LATCH/LDST_TMP_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/A_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/B_OUT_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_14_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_13_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_15_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_12_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_10_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_9_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_11_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_8_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_7_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_5_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_4_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_6_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_3_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_2_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_0_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/GPRegBank/REGFILE_1_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_15> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_14> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_13> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_12> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_11> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_10> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_9> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_8> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_7> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_6> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_5> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_4> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_3> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_2> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_1> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+WARNING:Xst:2677 - Node <FPU/ALU/Load_Store_Unit/reg_0> of sequential type is unconnected in block <UMDRISC16_TopLevel>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block UMDRISC16_TopLevel, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : UMDRISC16_TopLevel.ngr
+Top Level Output File Name         : UMDRISC16_TopLevel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 7
+
+Cell Usage :
+# BELS                             : 36
+#      GND                         : 3
+#      INV                         : 1
+#      LUT1                        : 8
+#      LUT3                        : 1
+#      LUT4                        : 2
+#      MUXCY                       : 8
+#      MUXF5                       : 1
+#      VCC                         : 3
+#      XORCY                       : 9
+# FlipFlops/Latches                : 9
+#      FDC                         : 9
+# RAMS                             : 2
+#      RAMB16_S36_S36              : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 1
+#      IBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                        6  out of   4656     0%  
+ Number of Slice Flip Flops:              9  out of   9312     0%  
+ Number of 4 input LUTs:                 12  out of   9312     0%  
+ Number of IOs:                           7
+ Number of bonded IOBs:                   2  out of    232     0%  
+ Number of BRAMs:                         2  out of     20    10%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 11    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+Control Signal                                                                            | Buffer(FF name)                            | Load  |
+------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+ControlUnit/Program_Counter/Address_or0000(ControlUnit/Program_Counter/Address_or000022:O)| NONE(ControlUnit/Program_Counter/Address_0)| 9     |
+------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.987ns (Maximum Frequency: 250.815MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.987ns (frequency: 250.815MHz)
+  Total number of paths / destination ports: 55 / 19
+-------------------------------------------------------------------------
+Delay:               3.987ns (Levels of Logic = 9)
+  Source:            ControlUnit/Program_Counter/Address_1 (FF)
+  Destination:       ControlUnit/Program_Counter/Address_8 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: ControlUnit/Program_Counter/Address_1 to ControlUnit/Program_Counter/Address_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.591   0.762  ControlUnit/Program_Counter/Address_1 (ControlUnit/Program_Counter/Address_1)
+     LUT1:I0->O            1   0.704   0.000  ControlUnit/Program_Counter/Maccum_Address_cy<1>_rt (ControlUnit/Program_Counter/Maccum_Address_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  ControlUnit/Program_Counter/Maccum_Address_cy<1> (ControlUnit/Program_Counter/Maccum_Address_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  ControlUnit/Program_Counter/Maccum_Address_cy<2> (ControlUnit/Program_Counter/Maccum_Address_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  ControlUnit/Program_Counter/Maccum_Address_cy<3> (ControlUnit/Program_Counter/Maccum_Address_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  ControlUnit/Program_Counter/Maccum_Address_cy<4> (ControlUnit/Program_Counter/Maccum_Address_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  ControlUnit/Program_Counter/Maccum_Address_cy<5> (ControlUnit/Program_Counter/Maccum_Address_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  ControlUnit/Program_Counter/Maccum_Address_cy<6> (ControlUnit/Program_Counter/Maccum_Address_cy<6>)
+     MUXCY:CI->O           0   0.059   0.000  ControlUnit/Program_Counter/Maccum_Address_cy<7> (ControlUnit/Program_Counter/Maccum_Address_cy<7>)
+     XORCY:CI->O           1   0.804   0.000  ControlUnit/Program_Counter/Maccum_Address_xor<8> (ControlUnit/Program_Counter/Result<8>)
+     FDC:D                     0.308          ControlUnit/Program_Counter/Address_8
+    ----------------------------------------
+    Total                      3.987ns (3.225ns logic, 0.762ns route)
+                                       (80.9% logic, 19.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.19 secs
+ 
+--> 
+
+Total memory usage is 326176 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  617 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

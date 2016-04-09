@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ProgramCounter.xst" -ofn "C:/Users/dbake/Desktop/sandbox/UMDRISC16/ProgramCounter.syr" 

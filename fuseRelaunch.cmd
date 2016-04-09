@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/dbake/Desktop/sandbox/UMDRISC16/TLTEST_isim_beh.exe" -prj "C:/Users/dbake/Desktop/sandbox/UMDRISC16/TLTEST_beh.prj" "work.TLTEST" 

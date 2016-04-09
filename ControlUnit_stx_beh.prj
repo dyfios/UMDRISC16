@@ -1,0 +1,6 @@
+vhdl isim_temp "WB_Unit.vhd"
+vhdl isim_temp "OaUnit.vhd"
+vhdl isim_temp "FetchUnit.vhd"
+vhdl isim_temp "Decode.vhd"
+vhdl isim_temp "../ProjectLab1/ProgramCounter.vhd"
+vhdl isim_temp "ControlUnit.vhd"

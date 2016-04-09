@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/dbake/Desktop/sandbox/UMDRISC16/TLTEST_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="tltest" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/tltest/uut/ControlUnit/Fetch_Unit/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/ControlUnit/Fetch_Unit/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/ControlUnit/Fetch_Unit/fetch_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fetch_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fetch_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/ControlUnit/Fetch_Unit/instruction" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">instruction[15:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">instruction[15:0]-F</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/ControlUnit/Decode_Unit/op_out" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">op_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">op_out[3:0]-D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/ControlUnit/OA_Unit/op_out" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">op_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">op_out[3:0]-OA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/FPU/ALU_LATCH/alu_out" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">alu_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">alu_out[15:0]-ex</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/ControlUnit/Fetch_Unit/out_addr" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">out_addr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out_addr[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">out_addr[8:0]-F</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/ControlUnit/Decode_Unit/addr_out" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">addr_out[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_out[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">addr_out[8:0]-D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/ControlUnit/Decode_Unit/code" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">code[15:0]</obj_property>
+      <obj_property name="ObjectShortName">code[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/ControlUnit/Decode_Unit/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/ControlUnit/Decode_Unit/ra_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ra_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ra_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/ControlUnit/Decode_Unit/rb_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rb_out[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/FPU/ALU/Arith_Unit/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">a[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/FPU/ALU/Arith_Unit/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/FPU/ALU/Arith_Unit/op" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/FPU/ALU/Arith_Unit/ccr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ccr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ccr[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/FPU/ALU/Arith_Unit/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">result[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/FPU/ALU/Arith_Unit/a1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a1[16:0]</obj_property>
+      <obj_property name="ObjectShortName">a1[16:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/FPU/ALU/Arith_Unit/b1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b1[16:0]</obj_property>
+      <obj_property name="ObjectShortName">b1[16:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tltest/uut/FPU/ALU/Arith_Unit/arith" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">arith[16:0]</obj_property>
+      <obj_property name="ObjectShortName">arith[16:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

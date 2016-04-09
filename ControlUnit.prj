@@ -1,0 +1,6 @@
+vhdl work "WB_Unit.vhd"
+vhdl work "OaUnit.vhd"
+vhdl work "FetchUnit.vhd"
+vhdl work "Decode.vhd"
+vhdl work "../ProjectLab1/ProgramCounter.vhd"
+vhdl work "ControlUnit.vhd"
